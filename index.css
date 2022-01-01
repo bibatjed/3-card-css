@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  row-gap: 4rem;
+  flex-direction: column;
+  padding: 5rem;
+  height: 50vh;
+  width: 20%;
+}
+
+.card span {
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+  font-size: 2rem;
+  flex-grow: 10;
+}
+
+.card button {
+  border-width: 0.3rem;
+  border-radius: 2rem;
+  color: black;
+  font-size: 2rem;
+  border-color: white;
+  border-style:solid;
+  width: 50%;
+  height: 10%;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: white;
+  cursor: pointer;
+}
+
+.card button:hover{
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+
+@media (max-width: 1682px){
+  html,body{
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 908px){
+  html,body{
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 721px){
+  html,body{
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 674px){
+  html,body{
+    font-size: 4px;
+  }
+}
+
+@media (max-width: 482px) {
+  html,body{
+    font-size: 4px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .card {
+    width: 90%;
+    height: 50%;
+    row-gap:0;
+    justify-content: space-around;
+  }
+
+  .card p {
+    flex-grow: 0;
+  }
+  .card button {
+    width: 25%;
+    height: 15%;
+
+  }
+}
